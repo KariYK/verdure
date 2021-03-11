@@ -1,0 +1,190 @@
+
+/* Disclaimer: I know that this is not the best practice before
+responsive web design. This is simply a mobile app prototype,
+meant to run at the dimensions of an iPhone X.*/
+
+
+/*
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('./images/background-home.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  font-family: "Roboto", sans-serif;;
+  font-size: 16px;
+  margin: 0;
+  max-width:100%;
+}
+
+
+.bottomnav {
+  background-color: #82d676;
+  height: 40px;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+}
+
+img {
+  bottom: 0;
+  display: block;
+}
+
+.icon {
+  display: inline-block;
+  float: center;
+  height: 80%;
+  margin: 10px 20px 10px 20px;
+}
+
+.plant-one {
+  bottom: 0;
+  display: fixed;
+  float: left;
+  text-align: center;
+  width: 50%;
+}
+
+.plant-two {
+  bottom: 0;
+  float: right;
+  width : 50%;
+  text-align: center;
+}
+
+.potted-plant {
+  margin: auto;
+  width: 50%;
+}
+
+.pot {
+  margin: 0 auto 0;
+  padding: 0;
+}
+
+.pot > img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.plant {
+  margin: auto auto 0;
+  padding: 0;
+}
+
+.plant > img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.table {
+  bottom: 1px;
+  display: fixed;
+  width: 100%;
+}
+.table > img {
+  bottom: 1px;
+  display: fixed;
+  width: inherit;
+}
+*/
+
+
+*, *:before, *:after {
+/*  box-sizing: border-box;*/
+}
+
+body {
+  background-size: contain;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  background-image: url('./images/background-home.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 2436px;
+  width: 100%;
+}
+
+.bottomnav {
+  align-self: flex-end;
+  background-color: #82d676;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  width: 100%;
+  height: calc(7% - 2rem);
+  /* overflow: hidden; */
+  /* bottom: 0; */
+  z-index: 10;
+}
+
+img {
+  bottom: 0;
+  display: block;
+  width: 100%;
+}
+
+.icon {
+  height: 100%;
+  margin: 0 auto;
+}
+
+.icon > a > img {
+  height: 100%;
+}
+
+.table-container {
+  margin: auto;
+  height: 93%;
+  /* align-self: flex-end; */
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+.plant-one {
+  align-self: flex-start;
+  bottom: 0;
+  margin-top: auto;
+  padding: -5px;
+  text-align: center;
+  width: 50%;
+  z-index: 1;
+}
+
+.plant-two {
+  align-self: flex-end;
+  bottom: 0;
+  padding: 0;
+  margin-left: auto;
+  text-align: center;
+  width : 50%;
+  z-index: 2;
+}
+
+.potted-plant {
+  align-content: center;
+  margin: auto;
+  width: 45%;
+  z-index: inherit;
+}
+
+
+.table {
+  bottom: 1px;
+  display: fixed;
+  width: 100%;
+}
+
+
+.pot {
+  margin: 0 auto 0;
+  padding: 0;
+}
